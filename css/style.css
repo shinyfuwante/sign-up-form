@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --left-width: 40%;
+    --right-desc-height: 37.5%;
+    --right-sign-height: 36%;
+    font-family: 'Dosis', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+body {
+    display:flex;
+    height: 100vh;
+}
+
+span.italics {
+    font-style: italic;
+    margin-right: 0.1rem;
+}
+
+.left-container {
+    margin-left: -10px;
+    width: var(--left-width);
+    background-image: url(./images/molly_resize.jpeg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 40%;
+}
+
+.right-container {
+    width: calc(100% - var(--left-width));
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 130, 173, 0.238);
+}
+
+.description {
+    height: var(--right-desc-height);
+    display: flex;
+    flex-direction: column;
+}
+.description text { 
+    margin: 2vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+text.top-text {
+    margin-top: 14vh;
+    margin-bottom: 1vh; 
+}
+text.bottom-text {
+    font-weight: 600;
+
+}
+
+.form-container {
+    height: calc(100% - var(--right-desc-height));
+}
+.form-title {
+    width: 100%;
+}
+.signup {
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 2px 2px 2px rgba(131, 117, 156, 0.238);
+    border: 1px solid rgba(131, 117, 156, 0.238);
+    background-color: rgba(198, 177, 237, 0.238);
+    gap: 5px;
+    padding: 20px;
+}
+.form-container .input {
+    font-size: 14px;
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 40;
+    width: 45%;
+}
+
+.input input {
+    border-radius: 4px;
+}
+
+.input input:invalid {
+    border: 2px solid red;
+    border-radius: 2px;
+}
+
+.input input:valid {
+    border: 2px solid chartreuse;
+    border-radius: 2px;
+}
+
+.input input:placeholder-shown {
+    border: 2px solid rgba(131, 117, 156, 0.238);
+    border-radius: 4px;
+}
+
+.input input:focus {
+    border: 3px solid rgba(131, 117, 156, 0.438);
+    border-radius: 2px;
+}
+
+.submitform {
+    display:flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-top: 3vh;
+    margin-left: 20px;
+    gap: 12px;
+}
+
+.submitform button{
+    border-radius: 5px;
+    background-color: rgba(198, 177, 237, 1.0);
+    color: white;
+    border: 0px;
+    box-shadow: 2px 2px 2px gray;
+    font-size: 14px;
+    padding: 12px 40px;
+    text-align: center;
+}
+
+.submitform text {
+    font-size: 12px;
+}
+.submitform a {
+    text-decoration: none;
+}
+
+
+
+
+
+
